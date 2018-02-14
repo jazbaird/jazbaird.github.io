@@ -47,8 +47,8 @@ nav ul li a:hover {
 
 main {}
 main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 50%; }
+main figure { margin: 0 0 .2rem 2%; width: 96%; }
+main figure img { width: 75%; }
 
 @media only screen
     and (max-device-width: 480px) {
@@ -58,8 +58,9 @@ main figure img { width: 50%; }
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 15px; /* fill the page in the small/phone view */
-  margin: 25x;
+   /* fill the page in the small/phone view */
+  margin: 0 0 .2rem 2%;
+    width: 75%;
   padding: 10px;
 }
 
