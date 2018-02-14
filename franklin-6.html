@@ -23,7 +23,7 @@
   </header>
 
   <!-- site navigation use placeholder references -->
-  <nav class="flex-container">
+  <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul>
     	<li><a href="#">Home</a></li>
@@ -38,9 +38,9 @@
   <main>
     <h2>The City of Franklin</h2>
     <figure>
-      <img src="/images/Franklin.jpg">
+      <img src="images/Franklin.jpg">
     </figure>
-    <section>
+    <section id="summary">
       <h3>Weather Summary</h3>    
       <div class="highlow">
         <p>High: 90&deg;F</p>  
@@ -93,12 +93,15 @@
     </section>
       
     <article>
-      <h3>Franklin Breaks Record</h3>	
+      <h3>Franklin Breaks Record</h3>
+        <section id="content">
       <p class="town-article">
-        <img src="/images/franklin2.jpg" width="30px" height="auto">
+        
         Franklin wins Sunshine Award!  The Weather Channel awarded the city of Franklin with the Sunshine award.  Franklin had over 250 days of sunshine last year.  The city experienced over 100 consecutive days of sunshine last year resulting in a minor drought. The drought was short-lived due to a tropical storm that came at the end of the summer.  This year, Franklin has experienced 25 days of sunshine despite colder than normal temperatures.
       </p>
-		</article>		  
+            <img src="images/franklin2.jpg" width="100%" height="auto">
+        </section>
+      </article>		  
   
   </main>
     
