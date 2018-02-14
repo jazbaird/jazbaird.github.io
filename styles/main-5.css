@@ -70,7 +70,9 @@ footer {
     padding: 25px;
     margin: 25px;
 }
-footer aside {}
+footer aside {
+    display: center;
+}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
