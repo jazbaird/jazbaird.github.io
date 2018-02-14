@@ -30,7 +30,7 @@ nav ul li a {
     display: block;
     color: #000;
     padding: 8px 16px;
-    width: 60px;
+    width: 200px;
     text-decoration: none;
 }
 nav ul li.active a {}
@@ -52,11 +52,18 @@ main figure img { width: 50%; }
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+  width: 15px; /* fill the page in the small/phone view */
+  margin: 25x;
+  padding: 10px;
 }
 
-footer {}
+footer {
+    background-color: lightblue;
+    width: 300px;
+    border: 25px solid blue;
+    padding: 25px;
+    margin: 25px;
+}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
