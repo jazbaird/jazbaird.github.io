@@ -3,7 +3,8 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-size: 16px;
+  font-family: 'Lora', serif;
+    font-size: 16px;
   /* Declare the base font-family - from google font api or other */
 }
 
