@@ -84,7 +84,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
    /* fill the page in the small/phone view */
   margin: 0 0 .2rem 2%;
     float: right;
-    width: 75%;
+    width: 50%;
   padding: 10px;
 }
 
