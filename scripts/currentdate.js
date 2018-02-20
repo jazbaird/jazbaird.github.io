@@ -11,7 +11,10 @@ function myFunction() {
     weekday[6] = "Saturday";
 
     var n = weekday[d.getDay()];
-    var d = new Date();
-    document.getElementById("currentdate").innerHTML = n + d.toDateString();
+    var a = getDate();
+    var m = getMonth();
+    var y = getFullYear();
+    
+    document.getElementById("currentdate").innerHTML = n + ", " + a + " " + m + " " + y;
 }
 </script>

@@ -5,7 +5,11 @@
         display: inline;
     }
     
-section.forecast { display: block; } 
+section.forecast { 
+    display: flex;
+    flex-direction: column;
+    float: right;
+    } 
     
  article section#content{
     display: flex;
