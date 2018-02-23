@@ -25,18 +25,15 @@
         </div>
     </header>
   <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
-      <div class="topnav" id="myTopnav">      
-    <ul>
+    <button onclick="myMenu()">&#9776;</button>
+    <ul  id="myHome" class="hide-nav">
     	<li><a href="#home">Home</a></li>
     	<li ><a href="#" class="active">Franklin</a></li>
     	<li><a href="#greenville">Greenville</a></li>
     	<li><a href="#springfield">Springfield</a></li>
     	<li><a href="#storm">Storm Center</a></li>
     	<li><a href="#gallery">Gallery</a></li>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </ul>
-    </div>
   </nav>
     <br>
   <main>
@@ -45,6 +42,7 @@
       <img src="images/franklin-original-1.jpg"
            srcset="images/franklin-original-1.jpg 400w, images/franklin-original-2.jpg 800w, images/franklin-original-3.jpg 1000w">
     </figure>
+      
     <div class="realweather">
         <section id="summary">
             <h3>Weather Summary</h3>    
@@ -68,7 +66,7 @@
             <h3>10 Day Forecast</h3>
                 <table>
 	           <thead>
-                <tc>
+                <tr>
                     <th>Day 1</th>
                     <th>Day 2</th>
                     <th>Day 3</th>
@@ -79,10 +77,10 @@
                     <th>Day 8</th>
                     <th>Day 9</th>
                     <th>Day 10</th>
-                  </tc>
+                  </tr>
 		      </thead>
               <tbody>  
-                <tc>
+                <tr>
                     <td>89&deg;F</td>
                     <td>87&deg;F</td>
                     <td>78&deg;F</td>
@@ -93,7 +91,7 @@
                     <td>83&deg;F</td>
                     <td>85&deg;F</td>
                     <td>89&deg;F</td>
-                  </tc>
+                  </tr>
 		      </tbody>
             </table>
         </section>

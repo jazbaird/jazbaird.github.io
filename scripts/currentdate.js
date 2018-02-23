@@ -1,5 +1,3 @@
-<script>
-function myFunction() {
     var d = new Date();
     var weekday = new Array(7);
     weekday[0] = "Sunday";
@@ -10,11 +8,19 @@ function myFunction() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
 
+    var month = new Array(3);
+    month [0] = "January";
+    month [1] = "February";
+    month [2] = "March";
+
     var n = weekday[d.getDay()];
-    var a = getDate();
-    var m = getMonth();
-    var y = getFullYear();
+    var m = month[d.getMonth()];
+    var a = d.getDate();
+    var y = d.getFullYear();
     
-    document.getElementById("currentdate").innerHTML = n + ", " + a + " " + m + " " + y;
-}
-</script>
+    var k = n + ", " + a + " " + m + " " + y;
+    
+    
+    document.getElementById("currentdate").innerHTML = k;
+
+

@@ -1,11 +1,10 @@
-<script>
-function myFunction () {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav"){
-        x.className += " responsive"
+
+function myMenu () {
+    var x = document.getElementById("myHome");
+    if (x.className === "hide-nav"){
+        x.className += "show-nav";
     }
     else {
-    x.className = "topnav";
+    x.className = "show-nav";
     }
 }
-</script>
