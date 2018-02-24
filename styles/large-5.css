@@ -2,7 +2,8 @@
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
     
    nav li {
-        display: inline;
+       display: flex;
+       flex-direction: row;
     }
     
 section.forecast { 
