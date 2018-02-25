@@ -1,3 +1,7 @@
+var wch = doWindChill();
+
+document.getElementById("windchill").innerHTML = wch;
+
 function doWindChill(){
     var h = parseInt(document.getElementById("hi").value);
     var l = parseInt(document.getElementById("lo").value);
@@ -8,7 +12,7 @@ function doWindChill(){
 	   s = Math.pow(speed, 0.16)
     var wc = windChill(temp,speed);
 	
-document.getElementById("output").innerHTML = wc;
+return wc;
 }
 
 function windChill(t, s){

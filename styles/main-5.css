@@ -39,6 +39,8 @@ header .subheading {
     font-style: italic;
 }
 
+/* Navigational Styles */
+
 .show-nav{
     display: block;
 }
@@ -57,7 +59,7 @@ nav ul {
     flex-direction: row;
 }
 nav ul li {
-   flex-basis: 1;
+   flex-basis: 5px;
 }
 
 nav ul li.active a {}
@@ -80,6 +82,7 @@ main figure.franklin {
 }
 main figure img { width: 100%; }
 
+/* These styles are for the display on the city pages. */
 .realweather {
     display: flex;
     flex-direction: row;
@@ -108,6 +111,8 @@ article p.town-article img {  /* This structure refers to img elements that are 
   padding: 10px;
 }
 
+/* Footer Styles */
+
 footer {
     background-color: lightblue;
     width: 60%;
@@ -121,3 +126,20 @@ footer aside {
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
+
+/* Gallery Styles */
+
+@media screen and (max-width: 600px) {
+  .gallery{
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+}  
+}
+
+@media screen and (min-width: 601px) {
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+  
+}

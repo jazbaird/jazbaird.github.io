@@ -8,7 +8,7 @@
       
 }
 nav ul li {
-   flex-basis: 1;
+   flex-basis: 5px;
     }
   nav button { display:none; }  /* hamburger button does not need to be shown */
   
