@@ -5,6 +5,6 @@ function myMenu () {
         x.className += "show-nav";
     }
     else {
-    x.className = "show-nav";
+    x.className = "hide-nav";
     }
 }
