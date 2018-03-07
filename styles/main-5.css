@@ -54,7 +54,7 @@ nav button {
 }
 nav ul {
     background-color: blue;
-    color: white;
+    color: orange;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -132,6 +132,27 @@ article p.town-article img {  /* This structure refers to img elements that are 
   padding: 10px;
 }
 
+/* Storm Form Styles */
+
+form#reportstorm {
+    margin: 1.5em 5%;
+}
+
+fieldset {
+    background-color: bisque;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    border: #021085 solid 1px;
+}
+
+legend {
+    color: darksalmon;
+    margin-left: 6%;
+    padding: .5em;
+    border: salmon solid 1px;
+    background-color: lightsalmon;
+    border-radius: .4em;
+}
 
 
 /* Footer Styles */
