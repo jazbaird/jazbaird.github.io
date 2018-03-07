@@ -146,12 +146,47 @@ fieldset {
 }
 
 legend {
-    color: darksalmon;
-    margin-left: 6%;
+    color: black;
+    margin-left: 1%;
     padding: .5em;
-    border: salmon solid 1px;
+    border: black solid 1px;
     background-color: lightsalmon;
     border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+textarea {
+    
+}
+
+input.submitBtn {
+    -webkit-appearance: none; /*to remove apple default styling*/
+    color: black;
+    border: solid 1px black;
+    border-radius: 9px;
+    width: 15%;
+    margin: .3em 0;
+    font-size: 1.5em;
+    padding: .3em;
+    background-color: salmon;
+    box-shadow: 4px 4px 10px gray;
+}
+
+/* Styles for Thanks page */
+
+thankyou {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+thankyou img{
+    float: right
+    padding: .5em;
+    margin: .5em 0;
 }
 
 
