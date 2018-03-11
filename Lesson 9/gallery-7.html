@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin - BlueSky Weather</title>
+  <meta name="author" content="Jennifer Baird">
+  <meta name="description" content="Weather in Franklin, MU">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans|Titillium+Web:700" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>    <!-- fonts --!>
+
+  <!-- site navigation use placeholder references -->
+<body>
+    <header>
+        <div class="header">
+            <img src="images/BlueSkyLogo.JPG" alt="The site logo" width="10%" height="auto">
+            <h1>BlueSky Weather</h1>
+                <div class="subheading"><i>Keeping You Informed</i></div>
+        </div>
+    </header>
+  <nav>
+    <button onclick="myMenu()">&#9776;</button>
+    <ul  id="myHome" class="hide-nav">
+    	<li><a href="#home">Home</a></li>
+    	<li ><a href="franklin-7.html" class="active">Franklin</a></li>
+    	<li><a href="#greenville">Greenville</a></li>
+    	<li><a href="#springfield">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+    <br>
+  <main id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <div style="background-color: lightsalmon;"><p class="title">Lightning</p><br>
+          <img src="images/weather-1.jpg" style="justify-content: center;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum magna lobortis enim auctor mattis. Suspendisse sed arcu tincidunt metus facilisis elementum a at leo. Sed eget augue laoreet, luctus risus ut, dignissim orci.</p>
+        </div>
+        <div><p class="title">Storms</p><br>
+            <img src="images/weather-2.jpg">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum magna lobortis enim auctor mattis. Suspendisse sed arcu tincidunt metus facilisis elementum a at leo. Sed eget augue laoreet, luctus risus ut, dignissim orci.</p>
+        </div>
+        <div style="background-color: lightsalmon;"><p class="title">Winter</p><br>
+            <img src="images/weather-3.jpg">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum magna lobortis enim auctor mattis. Suspendisse sed arcu tincidunt metus facilisis elementum a at leo. Sed eget augue laoreet, luctus risus ut, dignissim orci.</p>
+        </div>
+        <div><p class="title">Snow </p><br>
+            <img src="images/weather-4.jpg">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum magna lobortis enim auctor mattis. Suspendisse sed arcu tincidunt metus facilisis elementum a at leo. Sed eget augue laoreet, luctus risus ut, dignissim orci.</p>
+        </div>
+        <div style="background-color: lightsalmon;"><p class="title">Summer Storm </p><br>
+            <img src="images/weather-5.jpg">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum magna lobortis enim auctor mattis. Suspendisse sed arcu tincidunt metus facilisis elementum a at leo. Sed eget augue laoreet, luctus risus ut, dignissim orci.</p>
+        </div>
+        <div><p class="title">Tornado </p><br>
+            <img src="images/weather-6.jpg">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum magna lobortis enim auctor mattis. Suspendisse sed arcu tincidunt metus facilisis elementum a at leo. Sed eget augue laoreet, luctus risus ut, dignissim orci.</p>
+        </div>
+    </div>
+  
+  </main>
+    
+  <footer>
+    <aside>
+      BlueSky Weather<br>
+        123 Main St.<br>
+        Franklin, MU 83454<br>
+        (999) 999-9999<br>
+        contact@theurl.com 
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | BlueSky Weather | <span id="currentdate"></span>
+      </p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+ 
+
+</body>
+</html>

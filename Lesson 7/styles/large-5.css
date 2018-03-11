@@ -1,0 +1,23 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+   nav li {
+        display: inline;
+    }
+    
+section.forecast { 
+    display: flex;
+    flex-direction: column;
+    float: right;
+    } 
+    
+ article section#content{
+    display: flex;
+    flex-direction: row;
+    }
+    
+section p.town-article { margin-right: 5% }
+    
+article p.town-article img { width: auto; }
+  
+}

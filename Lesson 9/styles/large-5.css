@@ -1,0 +1,45 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    nav #myHome {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav ul li {
+        list-style-type: none;
+    }
+    
+   nav ul li a{
+    text-decoration: none;
+}
+    
+section.forecast { 
+    display: flex;
+    flex-direction: column;
+    } 
+    
+ article section#content{
+    display: flex;
+    flex-direction: row;
+    }
+    
+section p.town-article { margin-right: 5% }
+    
+article p.town-article img { width: auto; }
+    
+        img.hover {box-shadow: 5px gray;} 
+    
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+      }
+  
+}
+
+/* Style for the picture headings in the Gallery */
+
+.title {
+    text-align: center;
+    font-weight: bold;
+} 

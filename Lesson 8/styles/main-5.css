@@ -1,0 +1,221 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { 
+    margin: 20px;
+    padding: 15px;/* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    
+}
+header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    
+    font-family: 'Titillium Web', sans-serif;
+    color: blue;
+    font-weight: bold;
+}
+header img {
+    float: left;
+    width: 100px;
+    height: 80px;
+}
+header .subheading {
+    position: relative;
+    margin: 0;
+    text-indent: 15px;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+/* Navigational Styles */
+
+.show-nav{
+    display: flex;
+}
+
+.hide-nav {
+    display: none;
+}
+
+nav button {
+    
+}
+nav ul {
+    background-color: blue;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    
+    
+}
+ nav ul li {
+        list-style-type: none;
+    }
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li.active a {}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@ media screen and max-width: 600px) {
+    
+}
+
+main {
+    font-family: 'Lora', serif;
+}
+main h2 {}
+main figure.franklin { 
+   width: 100%;
+    margin: 0;
+}
+main figure img { width: 100%; }
+
+/* These styles are for the display on the city pages. */
+.realweather {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* Style for the images on Gallery */
+.gallery div img {
+    margin: auto;
+    justify-content: center;
+}
+/* Style for the picture headings in the Gallery */
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+section#summary{
+    display: flex;
+    flex-direction: column;
+}
+
+section.forecast {
+    display: none;
+        }
+
+article section#content{
+    display: flex;
+    flex-direction: column;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+   /* fill the page in the small/phone view */
+  margin: 0 0 .2rem 2%;
+   display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+  padding: 10px;
+}
+
+/* Storm Form Styles */
+
+form#reportstorm {
+    margin: 1.5em 5%;
+}
+
+fieldset {
+    background-color: bisque;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    border: #021085 solid 1px;
+}
+
+legend {
+    color: black;
+    margin-left: 1%;
+    padding: .5em;
+    border: black solid 1px;
+    background-color: lightsalmon;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+input[type=range]{
+    color:blue;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+}
+
+input.submitBtn {
+    -webkit-appearance: none; /*to remove apple default styling*/
+    color: black;
+    border: solid 1px black;
+    border-radius: 9px;
+    width: 15%;
+    margin: .3em 0;
+    font-size: 1.5em;
+    padding: .3em;
+    background-color: salmon;
+    box-shadow: 4px 4px 10px gray;
+}
+
+/* Styles for Thanks page */
+
+thankyou {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+thankyou img{
+    float: right
+    padding: .5em;
+    margin: .5em 0;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: lightblue;
+    width: 60%;
+    margin: auto;
+    border: 25px solid blue;
+}
+
+footer aside {
+    display: center;
+}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+/* Gallery Styles */
+/*
+
+
+}
+*/
+   #gallery img:hover {box-shadow: 10px 5px 5px gray;}
+  
+}

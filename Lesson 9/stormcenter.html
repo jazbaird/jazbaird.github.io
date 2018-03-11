@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin - BlueSky Weather</title>
+  <meta name="author" content="Jennifer Baird">
+  <meta name="description" content="Weather in Franklin, MU">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans|Titillium+Web:700" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>    <!-- fonts --!>
+
+  <!-- site navigation use placeholder references -->
+<body>
+    <header>
+        <div class="header">
+            <img src="images/BlueSkyLogo.JPG" alt="The site logo" width="10%" height="auto">
+            <h1>BlueSky Weather</h1>
+                <div class="subheading"><i>Keeping You Informed</i></div>
+        </div>
+    </header>
+  <nav>
+    <button onclick="myMenu()">&#9776;</button>
+    <ul  id="myHome" class="hide-nav">
+    	<li><a href="#home">Home</a></li>
+    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#greenville">Greenville</a></li>
+    	<li><a href="#springfield">Springfield</a></li>
+    	<li><a href="#" class="active">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>
+  </nav>
+    <br>
+  <main>
+    <h1>See a storm?  Report it here!</h1><br>
+      <p>Please complete the following form to report storm conditions to our meterologists.</p>
+    <form action="thanks.html" method="post" enctype="multipart/form-data" name="reportstorm">
+    
+    <fieldset id="personal"> 
+      <legend><span>Personal Contact Information</span></legend>  
+      <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -.,_]{3,99}" required></label>
+      <label><span>Email: </span><input name="email" type="email" value="" placeholder="name@abc.com"  required></label> 
+        <label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="2225551234" patern="[0-9]{10,20}"></label>
+      <label><span>Zipcode: </span><input name="zipcode" type="number" value="" placeholder="10101-1010" pattern="[0-9-]{5,10}" required></label>
+     </fieldset> 
+        
+      <fieldset id="storminfo"> 
+      <legend><span>Storm Information</span></legend>  
+      <label><span>Date: </span><input name="date" type="date" value="" required></label>
+      <label><span>Storm Type: </span><input name="stormtype" type="list" list="stormtype" required> 
+          <datalist id="stormtype">
+            <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+          </datalist>
+        </label>
+      <label><span>Storm Severity (minimal=1, severe=10): </span><input name="severity" type="range" value="5" min="1" max="10"></label>
+      <label><span>Storm Region: </span><input name="region" type="list" list="region" required>
+          <datalist id="region">
+            <option value="Franklin"></option>
+              <option value="Greenville"></option>
+              <option value="Springfield"></option>
+          </datalist>
+      </label>      
+      <label><span>User in Danger?  </span>
+          <input name="danger1" type="radio" value="Yes"> Yes
+          <input name="danger2" type="radio" value="No" > No
+          </label>
+    
+     </fieldset>
+        
+     <fieldset>
+        <legend><span>Additional Information</span></legend>
+        <label><span>Please provide any additional comments below. </span></label>
+            <textarea name="comments" type="textarea" value=""></textarea>
+     </fieldset>  
+        <input type="submit" value="Submit" class="submitBtn">
+    </form>
+      <br>
+      
+      
+  </main>
+    
+  <footer>
+    <aside>
+      BlueSky Weather<br>
+        123 Main St.<br>
+        Franklin, MU 83454<br>
+        (999) 999-9999<br>
+        contact@theurl.com 
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | BlueSky Weather | <span id="currentdate"></span>
+      </p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+ 
+
+</body>
+</html>

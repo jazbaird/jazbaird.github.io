@@ -1,0 +1,87 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { 
+    margin: 20px;
+    padding: 15px;/* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+header h1 {}
+header img {}
+header .subheading {}
+
+nav {}
+nav button {}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+}
+nav ul li {
+   flex-basis: 1;
+}
+nav ul li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {}
+nav ul li a:hover {
+    background-color: #ff6411;
+    color: darkblue;
+}
+
+main {}
+main h2 {}
+main figure { 
+    margin: auto; 
+    width: 60%; 
+}
+main figure img { width: 100%; }
+
+section#summary{
+    display: flex;
+    flex-direction: column;
+}
+
+section.forecast {
+    display: none;
+        }
+
+article section#content{
+    display: flex;
+    flex-direction: column;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+   /* fill the page in the small/phone view */
+  margin: 0 0 .2rem 2%;
+    float: right;
+    width: 75%;
+  padding: 10px;
+}
+
+footer {
+    background-color: lightblue;
+    width: 60%;
+    margin: auto;
+    border: 25px solid blue;
+}
+footer aside {
+    display: center;
+}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
