@@ -37,77 +37,21 @@
   </nav>
     <br>
   <main>
-    <h2>Weather Story</h2>
-    <figure class="weather">
-      <img src="images/wind.jpg">
-    </figure>
+    <h2>Weather News</h2>
+         
+    <div class="newsweather">
+            <h3>Wind Shear</h3>    
+                <img src="/images/wind.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lacus non nisi eleifend accumsan quis in dolor. Donec faucibus venenatis nibh. Mauris ullamcorper eros ut tortor vehicula congue. Integer venenatis nisi quis turpis hendrerit efficitur.</p>   
+    </div>
       
-    <div class="realweather">
-        <section id="summary">
-            <h3>Weather Summary</h3>    
-            <div class="highlow">
-                <p>High: <span id="hi">90</span>&deg;F</p>  
-                <p>Low: <span id="lo">66</span>&deg;F</p>  
-            </div>
-            <div class="current">
-                Sunny
-                <picture>
-                <img src="images/sun.jpg" alt="sunshine" width="30px" height="auto">
-                </picture>
-            </div>   
-            <div class="conditions">
-                <p>Precipitation: 0%</p>  
-                <p>Wind Speed: <span id="speed">5</span> mph SW</p>
-                <p>Wind Chill: <span id="windchill"></span></p>
-            </div>           
-        </section>
         
-        <section class="forecast">
-            <h3>10 Day Forecast</h3>
-                <table>
-	           <thead>
-                <tr>
-                    <th>Day 1</th>
-                    <th>Day 2</th>
-                    <th>Day 3</th>
-                    <th>Day 4</th>
-                    <th>Day 5</th>
-                    <th>Day 6</th>
-                    <th>Day 7</th>
-                    <th>Day 8</th>
-                    <th>Day 9</th>
-                    <th>Day 10</th>
-                  </tr>
-		      </thead>
-              <tbody>  
-                <tr>
-                    <td>89&deg;F</td>
-                    <td>87&deg;F</td>
-                    <td>78&deg;F</td>
-                    <td>75&deg;F</td>
-                    <td>72&deg;F</td>
-                    <td>72&deg;F</td>
-                    <td>79&deg;F</td>
-                    <td>83&deg;F</td>
-                    <td>85&deg;F</td>
-                    <td>89&deg;F</td>
-                  </tr>
-		      </tbody>
-            </table>
-        </section>
-        </div>
+        
       <br>
       
-    <article>
-      <h3>Franklin Breaks Record</h3>
-        <section id="content">
-      <p class="town-article">
-        
-        Franklin wins Sunshine Award!  The Weather Channel awarded the city of Franklin with the Sunshine award.  Franklin had over 250 days of sunshine last year.  The city experienced over 100 consecutive days of sunshine last year resulting in a minor drought. The drought was short-lived due to a tropical storm that came at the end of the summer.  This year, Franklin has experienced 25 days of sunshine despite colder than normal temperatures.
-      </p>
-            <img src="images/franklin2.jpg" width="100%" height="auto">
-        </section>
-      </article>		  
+    <section>
+      
+    </section>  
   
   </main>
     
@@ -126,6 +70,56 @@
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/windchill.js"></script>
+  <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      var towns = request.response;
+      populateHeader(towns);
+      showTowns(towns);
+    }
+    function populateHeader(jsonObj) {
+      var myH1 = document.createElement('h1');
+      header.appendChild(myH1);
+      var myPara = document.createElement('p');
+      header.appendChild(myPara);
+    }
+    function showTowns(jsonObj) {
+      var heroes = jsonObj['towns'];
+      for(var i = 0; i < heroes.length; i++) {
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myList = document.createElement('ul');
+        myH2.textContent = towns[i].name;
+        myH3.textContent = 'Motto: ' + towns[i].motto;  
+        myPara1.textContent = 'Year Founded: ' + towns[i].yearFounded;
+        myPara2.textContent = 'Current Population: ' + towns[i].currentPopulation;
+        myPara3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+        myPara4.textContent = 'Events: ' + towns[i].events;
+          
+        for(var j = 0; j < events.length; j++) {
+          var listItem = document.createElement('li');
+          listItem.textContent = events[j];
+          myList.appendChild(listItem);
+        }
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myH3);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myPara4);
+        section.appendChild(myArticle);
+      }
+    }
+    </script>
 
 </body>
 </html>
