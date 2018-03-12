@@ -1,0 +1,59 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+  nav #myHome {
+    display: flex;
+    flex-direction: row;
+
+    background-color: lightblue;
+      
+}
+
+nav ul li {
+   color:red;
+    width:16.67%;
+    justify-content: center;
+    }
+    a{color:red;}
+    nav ul li.active a {}
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+section#summary{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+section p.town-article { margin-right: 5% }
+
+section.forecast { 
+    display: flex;
+    flex-direction: column;
+    float: right;
+    
+    }  
+
+/* show the 10-day forecast with the medium view and up */
+  
+    article section#content{
+    display: flex;
+    flex-direction: row;
+    
+    }
+    
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+     img.hover {box-shadow: 5px gray;} 
+    
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+      }
+}
+
+/* Style for the picture headings in the Gallery */
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}  
