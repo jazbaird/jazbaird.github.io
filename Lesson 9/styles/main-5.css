@@ -3,7 +3,7 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  
+  background-color: cornsilk;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -12,9 +12,41 @@ header, nav, main, footer {
     padding: 15px;/* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
+.social {
+    float: right;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.social:hover {
+    opacity: 0.7;
+}
+.social-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.social-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.social-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.social-instagram {
+    background: #125688;
+    color: white;
+}
 
 header {
-    
+   
 }
 header h1 {
     position: relative;
@@ -24,11 +56,12 @@ header h1 {
     font-family: 'Titillium Web', sans-serif;
     color: blue;
     font-weight: bold;
+    font-size: 30pt
 }
 header img {
     float: left;
-    width: 100px;
-    height: 80px;
+    width: 130px;
+    height: 100px;
 }
 header .subheading {
     position: relative;
@@ -37,6 +70,7 @@ header .subheading {
     
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
+    font-size: 16pt;
 }
 
 /* Navigational Styles */
@@ -93,24 +127,13 @@ main figure.franklin {
 main figure img { width: 100%; }
 
 /* These styles are for the display on the city pages. */
-.realweather {
-    display: flex;
-    flex-direction: row;
-    
+
+.bar {
+   background-color: blue;
+    padding: 10px;
 }
 
-/* Style for the images on Gallery */
-.gallery div img {
-    margin: auto;
-    justify-content: center;
-}
-/* Style for the picture headings in the Gallery */
-.title {
-    text-align: center;
-    font-weight: bold;
-}
-
-section#summary{
+.summary{
     display: flex;
     flex-direction: column;
 }
@@ -129,7 +152,23 @@ article p.town-article img {  /* This structure refers to img elements that are 
    display: flex;
     flex-wrap: nowrap;
     width: 50%;
-  padding: 10px;
+  padding: 20px;
+    border: 5px solid bisque;
+}
+
+/* Style for the images on Gallery */
+
+.gallery div img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Style for the picture headings in the Gallery */
+
+.title {
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Storm Form Styles */
@@ -193,10 +232,8 @@ thankyou img{
 /* Footer Styles */
 
 footer {
-    background-color: lightblue;
     width: 60%;
-    margin: auto;
-    border: 25px solid blue;
+    margin: auto; 
 }
 
 footer aside {

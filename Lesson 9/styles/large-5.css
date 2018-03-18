@@ -12,8 +12,9 @@
     
    nav ul li a{
     text-decoration: none;
-}
-    
+    }  
+
+      
 section.forecast { 
     display: flex;
     flex-direction: column;
