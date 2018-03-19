@@ -32,7 +32,6 @@ function weatherInfo(jsonObj) {
           var listItem = document.createElement('li');
           listItem.textContent = currentWeather[j];
           myList.appendChild(listItem);
-        }
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);

@@ -12,38 +12,6 @@ header, nav, main, footer {
     padding: 15px;/* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
-.social {
-    float: right;
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-
-.social:hover {
-    opacity: 0.7;
-}
-.social-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.social-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.social-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.social-instagram {
-    background: #125688;
-    color: white;
-}
 
 header {
    
