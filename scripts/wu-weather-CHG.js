@@ -1,5 +1,6 @@
 var requestURL = "http://api.wunderground.com/api/ac1c7a4642e5c719/conditions/forecast/q/MN/Franklin.json";
 var weatherObj = new XMLHttpRequest();
+
 weatherObj.open('GET', requestURL, true);
 weatherObj.send();
 
@@ -32,10 +33,12 @@ function weatherInfo(jsonObj) {
           var listItem = document.createElement('li');
           listItem.textContent = currentWeather[j];
           myList.appendChild(listItem);
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myList);
-        section.appendChild(myArticle);
+          myArticle.appendChild(myH2);
+          myArticle.appendChild(myPara1);
+          myArticle.appendChild(myPara2);
+          myArticle.appendChild(myPara3);
+          myArticle.appendChild(myList);
+          section.appendChild(myArticle);
       }
+    }
+}
