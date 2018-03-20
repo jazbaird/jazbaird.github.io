@@ -6,8 +6,10 @@ weatherObj.send();
 
 weatherObj.onload = function () {
     var weatherInfo = JSON.parse(weatherObj.responseText);
+    document.getElementById('hi').innerHTML = weatherInfo.simpleforecast:forecastday.high;
+    document.getElementById('lo').innerHTML = weatherInfo.simpleforecast:forecastday.low;
     document.getElementById('wcurrent').innerHTML = weatherInfo.current_observation.weather;
-    document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
+    document.getElementById('w_icon').src = weatherInfo.current_observation.icon;
     document.getElementById('precip').innerHTML = weatherInfo.current_observation.precip_today_in;
     document.getElementById('speed').innerHTML = weatherInfo.current_observation.speed;
     document.getElementById('windchill').innerHTML = weatherInfo.current_observation.windchill_string;
@@ -23,21 +25,22 @@ function weatherInfo(jsonObj) {
         var myPara3 = document.createElement('p');
         var myImg = document.createElement('img');  
         var myPara4 = document.createElement('p');
-        myPara1.textContent = 'Current Weather: ' + current_observation.weather;
-        myPara2.textContent = 'Current Temperature: ' + condition.temp_f;
-        myPara3.textContent = 'Current Wind Speed:' + conditions.wind_mph;
-        myImg.imageRendering = weatherIcon[i].img;
+        var myPara5 = document.createElement('p';)  
+        myPara1.textContent = 'High: ' + simpleforecast:forecastday.high;
+        myPara2.textContent = 'Low: ' + simpleforecast:forecastday.low;
+        myPara3.textContent = 'Currently:' + current_observation.weather;
+        myImg.imageRendering = current_observation.icon;
+        myPara4.textContent = 'Precipitation: ' + weatherInfo.current_observation.precip_today_in;
+        myPara5.textContent = 'Wind Speed ' + weatherInfo.current_observation.speed; 
           
         var currentWeather = weather[i].current;
-        for(var j = 0; j < scurrentWeather.length; j++) {
-          var listItem = document.createElement('li');
-          listItem.textContent = currentWeather[j];
-          myList.appendChild(listItem);
-          myArticle.appendChild(myH2);
+        for(var j = 0; j < currentWeather.length; j++) {
           myArticle.appendChild(myPara1);
           myArticle.appendChild(myPara2);
           myArticle.appendChild(myPara3);
-          myArticle.appendChild(myList);
+          myArticle.appendChild(myImg);
+          myArticle.appendChild(myPara4);
+          myArticle.appendChild(myPara5);    
           section.appendChild(myArticle);
       }
     }
