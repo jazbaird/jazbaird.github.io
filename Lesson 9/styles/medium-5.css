@@ -11,12 +11,23 @@ nav ul li {
     width:16.67%;
     justify-content: center;
     }
+    
 a {
     color:orange; 
     font-weight: bold;
     }
     
-nav ul li.active a {}
+nav ul li.active a {
+    color: white;
+    }
+    
+nav ul li.visited a {
+    color: greenyellow;
+    } 
+    
+nav ul li.hover a {
+    background color: darkblue;
+    }    
   
 nav button { display:none; }  /* hamburger button does not need to be shown */
   

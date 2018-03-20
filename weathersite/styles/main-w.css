@@ -55,8 +55,8 @@ nav button {
     
 }
 nav ul {
-    background-color: blue;
-    color: orange;
+    background-color: lightgray;
+    color: blue;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -74,7 +74,18 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav ul li.active a {}
+nav ul li.active a {
+    color: darkblue;
+}
+
+nav ul li.visited a {
+    color: darkorange;
+}
+
+nav ul li.hover a {
+    background color: darkblue;
+    color: white;
+}
 
 @media screen and (max-width: 600px) {
     
