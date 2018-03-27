@@ -4,6 +4,9 @@
 
 body {
   background-color: white;
+  font-family: 'Lora', serif;
+  font-family: 'Titillium Web: 700', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   /* Declare the base font-family - from google font api or other */
 }
 
