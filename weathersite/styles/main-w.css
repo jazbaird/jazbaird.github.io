@@ -218,16 +218,23 @@ thankyou img{
 
 footer {
     width: 60%;
-    margin: auto; 
+    margin-left: auto; 
+    margin-right:auto;
 }
 
 footer aside {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin: 20px;
+    border-color: darkblue;
+    background-color: azure;
+    padding: 20px;
 }
 
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+footer {
+    text-align: center;
+} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
 
