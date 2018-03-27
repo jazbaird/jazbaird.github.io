@@ -3,7 +3,7 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  background-color: lightcyan;
+  background-color: white;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -75,7 +75,7 @@ nav ul li a{
 }
 
 nav ul li.active a {
-    color: darkblue;
+    color: whitesmoke;
 }
 
 nav ul li.visited a {
@@ -99,6 +99,9 @@ main {
     font-family: 'Lora', serif;
 }
 main h2 {}
+
+#news {}
+
 main figure.franklin { 
    width: 100%;
     margin: 0;
@@ -109,6 +112,10 @@ main figure img { width: 100%; }
 
 .bar {
    background-color: blue;
+    padding: 10px;
+}
+.bar1 {
+    background-color: lights;
     padding: 10px;
 }
 
@@ -223,10 +230,21 @@ footer>p {} /* This structure refers to p elements that are direct children of t
 /* Other Class Selectors */
 
 /* Gallery Styles */
-/*
 
+.title {
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}  
 
+.pic {
+    justify-content: center;
 }
+
+.words {
+    justify-content: center;
+}
+
 */
    #gallery img:hover {box-shadow: 10px 5px 5px gray;}
   
