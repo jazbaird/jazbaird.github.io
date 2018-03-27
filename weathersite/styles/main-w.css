@@ -86,7 +86,6 @@ nav ul li.visited a {
 }
 
 nav ul li.hover a {
-    background color: darkblue;
     color: white;
 }
 
@@ -94,12 +93,9 @@ nav ul li.hover a {
     
 }
 
-@ media screen and max-width: 600px) {
-    
-}
-
 main {
     font-family: 'Lora', serif;
+    font-size: 14pt;
 }
 main h2 {}
 
@@ -118,7 +114,7 @@ main figure img { width: 100%; }
     padding: 10px;
 }
 .bar1 {
-    background-color: lights;
+    background-color: lightsalmon;
     padding: 10px;
 }
 
@@ -212,7 +208,7 @@ thankyou {
 }
 
 thankyou img{
-    float: right
+    float: right;
     padding: .5em;
     margin: .5em 0;
 }
@@ -226,8 +222,11 @@ footer {
 }
 
 footer aside {
-    display: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
@@ -248,7 +247,6 @@ footer>p {} /* This structure refers to p elements that are direct children of t
     justify-content: center;
 }
 
-*/
-   #gallery img:hover {box-shadow: 10px 5px 5px gray;}
-  
+ #gallery img:hover {
+       box-shadow: 10px 5px 5px gray;
 }
