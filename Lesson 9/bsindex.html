@@ -95,7 +95,9 @@
  
     function showTowns(jsonObj) {
       var towns = jsonObj['towns'];
+       
       for(var i = 0; i < towns.length; i++) {
+        
         var myArticle = document.createElement('article');
         var myH2 = document.createElement('h2');
         var myH3 = document.createElement('h3');  
@@ -124,7 +126,7 @@
         myArticle.appendChild(myPara4);
         myArticle.appendChild(myList);  
         section.appendChild(myArticle);
-      }
+          }
     }
     </script>
 
