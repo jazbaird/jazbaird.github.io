@@ -45,7 +45,12 @@ nav button { display:none; }  /* hamburger button does not need to be shown */
     .summary > div{
         width: 200px;
         margin: 10px;
-    }    
+    }
+
+    #wu {
+        display:block;
+        float:right;
+    }
     
 section.forecast { 
     display: flex;

@@ -1,7 +1,7 @@
 //populate Greenville with data from Underground Weather site
 var weatherGreenville = new XMLHttpRequest();
 
-weatherGreenville.open('GET', 'https://api.wunderground.com/api/ac1c7a4642e5c719/conditions/q/NC/Greenville.json', true);
+weatherGreenville.open('GET', 'https://api.wunderground.com/api/ac1c7a4642e5c719/conditions/q/TX/Greenville.json', true);
 weatherGreenville.send();
 
 weatherGreenville.onload = function() {
@@ -16,7 +16,7 @@ weatherGreenville.onload = function() {
 } //end of onload
 var temperatureFranklin = new XMLHttpRequest();
 
-temperatureFranklin.open('GET','https://api.wunderground.com/api/ac1c7a4642e5c719/forecast/q/NC/Greenville.json', true);
+temperatureFranklin.open('GET','https://api.wunderground.com/api/ac1c7a4642e5c719/forecast/q/TX/Greenville.json', true);
 temperatureFranklin.send();
 
 temperatureFranklin.onload = function() {
