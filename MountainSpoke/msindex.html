@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mountain Biking - Mountain Spoke</title>
+  <meta name="author" content="Jennifer Baird">
+  <meta name="description" content="Bicyles, tours, accessories, repair in Bozeman, MT">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/msmain.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/msmedium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/mslarge.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>    <!-- fonts --!>
+
+  <!-- site navigation use placeholder references -->
+<body>
+    <header>
+        <div class="header">
+            <img src="images/Logo.JPG" alt="The site logo" width="150" height="250">
+            <h1>Mountain Spoke</h1>
+                <div class="subheading"><i>Where Aero Meets Adventure</i></div>
+        </div>
+    </header>
+  <nav>
+    <button class="hamburger" onclick="myMenu()">&#9776;</button>
+    <ul class="myHome">
+    	<li class="active"><a href="msindex.html">Home</a></li>
+    	<li><a href="bikes.html">Bikes</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+    	<li><a href="accessories.html">Accessories</a></li>
+    	<li><a href="repair.html">Repair</a></li>
+    </ul>
+  </nav>
+    <div class="social">
+    <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="http://www.yelp.com" class="fa fa-yelp"></a>
+    <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+    <a href="http://www.pinterest.com" class="fa fa-pinterest"></a>
+    <a href="http://www.reddit.com" class="fa fa-redddit"></a>    
+   </div>
+    <br>
+  <main>
+    <h2>Welcome to Adventure!</h2>
+         
+    <div id="news">
+        
+        <div class="bikedisplay">
+           <a href="bikes.html"><img src="images/mbike1.jpg" alt="bike with view of valley" style="width: 100%;"></a>
+            <div class="words"> <b>We have Your Bike!</b><br>Looking for a quality ride for your next adventure?  Look no further than Mountain Spoke bikes.  We have all different styles for all different abilities and ages.  Come by to see what's new in the store!  You can depend on quality at Mountain Spoke.</div>    
+        </div>
+        <br>
+    </div>
+       <div class="bikedisplay">
+           <a href="tours.html"><img src="images/famtour9.jpg" alt="two on bikes" style="width: 100%;"></a>
+            <div class="words2"> <b>Go on a Tour with Us!</b><br>Enjoy a mountain biking adventure with like-minded people.  We organize tours for various abilities.  We have 1-day, 3-day, and 5-day tours.  Check out</div>    
+        </div>
+      <br>
+      <div class="bikedisplay">
+           <a href="accessories.html"><img src="images/bikeseats.JPG" alt="accessory wall in shop" style="width: 100%;"></a>
+            <div class="words2"> <b>Get Your Accessories Here!</b><br>We have the best prices in town for all your biking accessories!  Browse our Accessory page or come by and see the new items we received!  You won't be disappointed!</div>    
+        </div>
+      <div class="bikedisplay">
+           <a href="repair.html"><img src="images/repair1.JPG" alt="repair shop" style="width: 100%;"></a>
+            <div class="words2"> <b>Need Repair?</b><br>Bring your bike to us!  We have excellent skilled bike techs to repair your bike.  You'll be back on the trail in no time!</div>    
+        </div>
+      
+      <div class="bar">
+      </div>
+        
+  </main>
+    
+  <footer>
+      <div class="social">
+    <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="http://www.yelp.com" class="fa fa-yelp"></a>
+    <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+    <a href="http://www.pinterest.com" class="fa fa-pinterest"></a>
+    <a href="http://www.reddit.com" class="fa fa-redddit"></a>    
+   </div>
+    <aside>
+      Mountain Spoke<br>
+        123 Main St.<br>
+        Bozeman, MT 83454<br>
+        (999) 999-9999<br>
+        contact@theurl.com
+        
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain Spoke | <span id="currentdate"></span>
+      </p>
+      
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/navigation.js"></script> 
+  <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      var towns = request.response;
+      showTowns(towns);
+    }
+ 
+    function showTowns(jsonObj) {
+      var towns = jsonObj['towns'];
+      for(var i = 0; i < towns.length; i++) {
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myH3 = document.createElement('h3');  
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');  
+        var myList = document.createElement('ul');
+        myH2.textContent = towns[i].name;
+        myH3.textContent = 'Motto: ' + towns[i].motto;  
+        myPara1.textContent = 'Year Founded: ' + towns[i].yearFounded;
+        myPara2.textContent = 'Current Population: ' + towns[i].currentPopulation;
+        myPara3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+        myPara4.textContent = 'Events: ';
+        var events = towns[i].events;  
+        for(var j = 0; j < events.length; j++) {
+          var listItem = document.createElement('li');
+          listItem.textContent = events[j];
+          myList.appendChild(listItem);
+        }
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myH3);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myPara4);
+        myArticle.appendChild(myList);  
+        section.appendChild(myArticle);
+      }
+    }
+    </script>
+
+</body>
+</html>

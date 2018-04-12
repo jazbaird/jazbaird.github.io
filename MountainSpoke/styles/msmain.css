@@ -1,0 +1,321 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  background-color: tan;
+  font-family: 'Slabo 27px', serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Anton', sans-serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { 
+    margin: 20px;
+    padding: 15px;/* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+   
+}
+header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    
+    font-family: 'Anton', sans-serif;
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 30pt
+}
+header img {
+    float: left;
+    width: 130px;
+    height: 200px;
+}
+header .subheading {
+    position: relative;
+    margin: 0;
+    text-indent: 15px;
+    
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
+    font-size: 16pt;
+}
+
+/* Navigational Styles */
+
+.hamburger { 
+    display: block; 
+    position: absolute; 
+    top: 2.0rem; 
+    right: 1.25rem;
+}
+
+.myHome {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.show-nav{
+    display: flex;
+}
+
+.hide-nav {
+    display: none;
+}
+
+nav button {
+    
+}
+nav ul {
+    background-color: lightgray;
+    color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    
+    
+}
+ nav ul li {
+        list-style-type: none;
+    }
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    color: whitesmoke;
+}
+
+nav ul li.visited a {
+    color: darkorange;
+}
+
+nav ul li.hover a {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+   
+
+main {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14pt;
+}
+main h2 {}
+.social{
+    diplay: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 50px;
+}
+
+.fa{
+    padding: 5px;
+    font-size: 75px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-pinterest{
+    background: #FF0000;
+    color: white;
+}
+
+.fa-reddit{
+    background: #FF5700;
+    color: white;
+}
+
+.fa-yelp{
+    background: #E82C0C;
+    color: white;   
+}
+.fa-instagram{
+    background: #125688;
+    color: white;
+}
+
+#news {}
+
+main figure.franklin { 
+   width: 100%;
+    margin: 0;
+}
+main figure img { width: 100%; }
+
+/* These styles are for the display on the city pages. */
+
+.bar {
+   background-color: darkgreen;
+    padding: 10px;
+}
+
+
+.summary{
+    display: flex;
+    flex-direction: column;
+}
+
+article section#content{
+    display: flex;
+    flex-direction: column;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+   /* fill the page in the small/phone view */
+  margin: 0 0 .2rem 2%;
+   display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+  padding: 20px;
+    border: 5px solid bisque;
+}
+
+/* Style for the images on Gallery */
+
+.gallery div img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+     .gallery2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+    }
+
+/* Style for the picture headings in the Gallery */
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Storm Form Styles */
+
+form#tourreserv {
+    margin: 1.5em 5%;
+}
+
+fieldset {
+    background-color: bisque;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    border: #021085 solid 1px;
+}
+
+legend {
+    color: black;
+    margin-left: 1%;
+    padding: .5em;
+    border: black solid 1px;
+    background-color: lightsalmon;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+textarea {
+    
+}
+    
+.words {
+    text-align: center;
+    border: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Slabo+27;
+}
+    
+input.submitBtn {
+    -webkit-appearance: none; /*to remove apple default styling*/
+    color: black;
+    border: solid 2px black;
+    border-radius: 9px;
+    width: 15%;
+    margin: .3em 0;
+    font-size: 1.5em;
+    padding: .3em;
+    background-color: #AAFFAC;
+    box-shadow: 4px 4px 10px gray;
+}
+
+/* Styles for Thanks page */
+
+thankyou {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+thankyou img{
+    float: right;
+    padding: .5em;
+    margin: .5em 0;
+}
+
+
+/* Footer Styles */
+
+footer {
+    width: 60%;
+    margin-left: auto; 
+    margin-right:auto;
+}
+
+footer aside {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+    border-color: darkblue;
+    background-color: azure;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+/* Gallery Styles */
+
+.title {
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}  
+
+.pic {
+    justify-content: center;
+}
+
+.words {
+    justify-content: center;
+}
+
+ #gallery img:hover {
+       box-shadow: 10px 5px 5px gray;
+}
