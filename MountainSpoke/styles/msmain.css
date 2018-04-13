@@ -33,7 +33,7 @@ header h1 {
 header img {
     float: left;
     width: 130px;
-    height: 200px;
+    height: 100px;
 }
 header .subheading {
     position: relative;
