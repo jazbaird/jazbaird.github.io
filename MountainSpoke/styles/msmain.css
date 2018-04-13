@@ -283,7 +283,13 @@ thankyou img{
     padding: .5em;
     margin: .5em 0;
 }
-
+    .video{
+        display:block;
+        margin-left: 20px;
+        margin-right: auto;
+        padding: 1.5em;
+        background-color: darkgreen;
+    }
 
 /* Footer Styles */
 

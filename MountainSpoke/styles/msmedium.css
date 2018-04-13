@@ -217,3 +217,12 @@ input.submitBtn {
     margin-right: auto;
     text-align: center;
 }
+
+ .video{
+        display: flex;
+        flex-direction: column;
+        margin-left: 300px;
+     margin-right: 300px;
+     padding: 75px;
+        background-color: darkgreen;
+    }
