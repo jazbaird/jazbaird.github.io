@@ -56,6 +56,7 @@ header .subheading {
 .myHome {
     list-style: none;
     padding-left: 0;
+    display: none;
 }
 
 .navigation li {
@@ -65,7 +66,6 @@ header .subheading {
 .show-nav{
     display: flex;
 }
-
 .hide-nav {
     display: none;
 }
@@ -109,12 +109,13 @@ nav ul li.hover a {
    
 
 main {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 14pt;
+    font-family: 'Open Sans';
+    font-size: 16pt;
 }
 main h2 {}
+    
 .social{
-    diplay: flex;
+    display: flex;
     flex-direction: row;
     float: right;
     margin-right: 50px;
@@ -217,7 +218,7 @@ form#tourreserv {
 }
 
 fieldset {
-    background-color: bisque;
+    background-color: lightgoldenrodyellow;
     border-radius: 1em;
     margin: 1.5em 0;
     border: #021085 solid 1px;
@@ -228,7 +229,7 @@ legend {
     margin-left: 1%;
     padding: .5em;
     border: black solid 1px;
-    background-color: lightsalmon;
+    background-color: goldenrod;
     border-radius: .4em;
 }
 

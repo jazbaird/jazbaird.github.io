@@ -25,14 +25,57 @@ nav button { display:none; }  /* hamburger button does not need to be shown */
  .bikedisplay{
      position: relative;
      text-align: right;
-     color: white;
-    } 
+     font: Open Sans;
+    }
     
-    .words {
+  .social{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 50px;
+}
+
+.fa{
+    padding: 5px;
+    font-size: 75px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-pinterest{
+    background: #FF0000;
+    color: white;
+}
+
+.fa-reddit{
+    background: #FF5700;
+    color: white;
+}
+
+.fa-yelp{
+    background: #E82C0C;
+    color: white;   
+}
+.fa-instagram{
+    background: #125688;
+    color: white;
+}
+    
+    .words1 {
         position: absolute;
         top: 50%;
         left: 60%;
         right: 16px;
+        color: whitesmoke;
     }
     
      .words2 {
@@ -41,6 +84,7 @@ nav button { display:none; }  /* hamburger button does not need to be shown */
         left: 25px;
         right: 60%;
          text-align: left;
+         
     }
     .calendar{
         display: block;
@@ -110,6 +154,7 @@ section p.town-article { margin-right: 5% }
     justify-content: center;
     text-align: center;
     font-weight: bold;
+    font-family: Nunito-Sans;
 } 
 
 .pic {
@@ -124,5 +169,5 @@ section p.town-article { margin-right: 5% }
     border: 3px;
     margin-left: 55px;
     margin-right: 55px;
-    font-family: Slabo+27;
+    font-family: Open Sans;
 }
