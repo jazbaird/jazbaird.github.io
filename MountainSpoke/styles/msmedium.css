@@ -69,7 +69,10 @@ nav button { display:none; }  /* hamburger button does not need to be shown */
     background: #125688;
     color: white;
 }
-    
+    .bar {
+   background-color: darkgreen;
+    padding: 10px;
+}
     .words1 {
         position: absolute;
         top: 50%;
@@ -115,8 +118,47 @@ nav button { display:none; }  /* hamburger button does not need to be shown */
     
 section p.town-article { margin-right: 5% }
 
+form#tourreserv {
+    margin: 1.5em 5%;
+}
 
+fieldset {
+    background-color: lightgoldenrodyellow;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    border: #021085 solid 1px;
+}
 
+legend {
+    color: black;
+    margin-left: 1%;
+    padding: .5em;
+    border: black solid 1px;
+    background-color: goldenrod;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+textarea {
+    
+}
+input.submitBtn {
+    -webkit-appearance: none; /*to remove apple default styling*/
+    color: black;
+    border: solid 2px black;
+    border-radius: 9px;
+    width: 25%;
+    margin: .3em 0;
+    font-size: 1.5em;
+    padding: .3em;
+    background-color: #AAFFAC;
+    box-shadow: 4px 4px 10px gray;
+}
+    
 /* show the 10-day forecast with the medium view and up */
   
     article section#content{

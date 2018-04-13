@@ -53,15 +53,15 @@
       <div class="gallery2">
       <div><p class="title">Gallatin</p><br>
           <img class="pic" src="images/gallatinTour.jpg" alt="biking in Gallatin National Forest" >
-          <p class="words">Come test your limits with this technical ride.  We climb mountains, forage streams, and endure the extremes.  Food and water provided.  Bring your bike (or rent it!) and adventure with us.  $105</p>
+          <p class="words">Come test your limits with this technical ride.  We climb mountains, forage streams, and endure the extremes.  Food and water provided.  Bring your bike (or rent it!) and adventure with us. Technical level: &#9830; $105</p>
         </div>
         <div><p class="title">Yellowstone</p><br>
             <img class="pic" src="images/familytour.jpg" alt="biking in Yellowstone National Park">
-          <p class="words">Ride with us on the northern trails of Yellowstone.  Fields of wildflowers.  Ridges and peaks. Streams and valleys.  This ride has it all!  Lunch and cowboy dinner provided.  $125</p>
+          <p class="words">Ride with us on the northern trails of Yellowstone.  Fields of wildflowers.  Ridges and peaks. Streams and valleys.  This ride has it all!  Lunch and cowboy dinner provided. Technical level: &#9744; $125</p>
         </div>
         <div><p class="title">Big Sky Downhill</p><br>
             <img class="pic" src="images/DayTour.JPG" alt="biking at Big Sky ski resort">
-          <p class="words">Bring your bike. Get a bike lift.  Ride to the top of the mountain, and enjoy the trails all the way down.  Repeat.  This tour includes the bike lift and snack.  $95</p>
+          <p class="words">Bring your bike. Get a bike lift.  Ride to the top of the mountain, and enjoy the trails all the way down.  Repeat.  This tour includes the bike lift and snack. Technical level: &#9898; $95</p>
         </div>
           <br>
           <br>
@@ -74,22 +74,22 @@
     <p>Interested in joining the fun?  Please complete the information below to reserve your spot!</p>
     <fieldset id="personal"> 
       <legend><span>Personal Contact Information</span></legend>  
-      <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -.,_]{3,99}" required></label>
-      <label><span>Email: </span><input name="email" type="email" value="" placeholder="name@abc.com"  required></label> 
-        <label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="2225551234" patern="[0-9]{10,20}"></label>
+      <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -.,_]{3,99}" required></label><br>
+      <label><span>Email: </span><input name="email" type="email" value="" placeholder="name@abc.com"  required></label> <br>
+        <label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="2225551234" patern="[0-9]{10,20}"></label> <br>
       <label><span>Zipcode: </span><input name="zipcode" type="number" value="" placeholder="10101-1010" pattern="[0-9-]{5,10}" required></label>
      </fieldset> 
         
       <fieldset id="tourinfo"> 
       <legend><span>Select a Tour</span></legend>  
-      <label><span>Date: </span><input name="date" type="date" value="" required></label>
+      <label><span>Date: </span><input name="date" type="date" value="" required></label><br>
       <label><span>Tour: </span><input name="tourtype" type="list" list="tourtype" required> 
           <datalist id="tourtype">
             <option value="Gallatin 3-day"></option>
               <option value="Yellowstone 1-day"></option>
               <option value="Big Sky 1-day"></option>
           </datalist>
-        </label>      
+        </label>  <br>    
       <label><span>Need to rent a bike?  </span>
           <input name="bike1" type="radio" value="Yes"> Yes
           <input name="bike2" type="radio" value="No" > No
@@ -110,13 +110,14 @@
   </main>
     
   <footer>
+     
     <aside>
       Mountain Spoke<br>
         3950 Valley Commons Dr<br>
         Bozeman, MT 59718<br>
         (999) 999-9999<br>
         contact@theurl.com
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2787.9314410354295!2d-111.0929061852413!3d45.67227662755737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1523586562131" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
     </aside>
     <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain Spoke | <span id="currentdate"></span>
       </p>

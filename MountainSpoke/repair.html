@@ -111,8 +111,8 @@
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/navigation.js"></script>    
 <script>
-    services.open('GET','C:/Users/jazbaird/Documents/BYUI/CIT%20230/GitHub/jazbaird.github.io/MountainSpoke/data/serviceJSON.json', true);
-service.send();
+    services.open('GET','jazbaird.github.io/MountainSpoke/data/serviceJSON.json', true);
+services.send();
 
 services.onload = function() {
   var services = JSON.parse(services.responseText);

@@ -198,7 +198,13 @@ label {
     display: block;
     margin: .5em;
 }
-
+    .&#9744 {
+        color: blue;
+    }
+    
+    .&#9898 {
+        color: green;
+    }
 /* Style for the images on Gallery */
 
 .gallery div img {
@@ -263,7 +269,7 @@ input.submitBtn {
     color: black;
     border: solid 2px black;
     border-radius: 9px;
-    width: 15%;
+    width: 25%;
     margin: .3em 0;
     font-size: 1.5em;
     padding: .3em;
@@ -289,8 +295,9 @@ thankyou img{
 
 footer {
     width: 60%;
-    margin-left: auto; 
-    margin-right:auto;
+    margin-left: 150px; 
+    margin-right: 150px;
+    text-align: center;
 }
 
 footer aside {
