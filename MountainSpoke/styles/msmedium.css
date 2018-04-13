@@ -75,7 +75,9 @@ nav button { display:none; }  /* hamburger button does not need to be shown */
         top: 50%;
         left: 60%;
         right: 16px;
-        color: whitesmoke;
+        color: black;
+        font: Open Sans;
+        font-size: 20pt;
     }
     
      .words2 {

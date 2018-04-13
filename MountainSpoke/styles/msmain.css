@@ -4,9 +4,10 @@
 
 body {
   background-color: tan;
-  font-family: 'Slabo 27px', serif;
+    font-family: 'Anton', sans-serif;
   font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Anton', sans-serif;
+   font-family: 'Slabo 27px', serif;
+  
   /* Declare the base font-family - from google font api or other */
 }
 

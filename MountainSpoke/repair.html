@@ -111,11 +111,11 @@
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/navigation.js"></script>    
 <script>
-    services.open('GET','https://api.wunderground.com/api/ac1c7a4642e5c719/forecast/q/MN/Franklin.json', true);
+    services.open('GET','C:/Users/jazbaird/Documents/BYUI/CIT%20230/GitHub/jazbaird.github.io/MountainSpoke/data/serviceJSON.json', true);
 service.send();
 
 services.onload = function() {
-  var temperatureInfo = JSON.parse(temperatureFranklin.responseText);
+  var services = JSON.parse(services.responseText);
     obj = JSON.parse(text);
     document.getElementById("basic").innerHTML = obj.services[0].serviceName;
     document.getElementById("basicp").innerHTML = obj.services[0].servicePrice;
