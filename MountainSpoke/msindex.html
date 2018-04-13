@@ -85,7 +85,7 @@
     <a href="http://www.pinterest.com" class="fa fa-pinterest"></a>
     <a href="http://www.reddit.com" class="fa fa-redddit"></a>    
    </div>
-    <aside>
+    <aside href="contact.html">
       Mountain Spoke<br>
         3950 Valley Commons Dr<br>
         Bozeman, MT 59718<br>
@@ -101,7 +101,11 @@
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/navigation.js"></script> 
-
+ <script>
+    $(document).ready(function(){
+       if(confirm('Register with Us!')) document.location = "contactl.html";
+    });
+    </script>
 
 </body>
 </html>

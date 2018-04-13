@@ -178,18 +178,25 @@ main figure img { width: 100%; }
     flex-direction: column;
 }
 
-article section#content{
-    display: flex;
-    flex-direction: column;
+fieldset {
+    background-color: ;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    border: #021085 solid 1px;
 }
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-   /* fill the page in the small/phone view */
-  margin: 0 0 .2rem 2%;
-   display: flex;
-    flex-wrap: nowrap;
-    width: 50%;
-  padding: 20px;
-    border: 5px solid bisque;
+
+legend {
+    color: black;
+    margin-left: 1%;
+    padding: .5em;
+    border: black solid 1px;
+    background-color: lightsalmon;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
 }
 
 /* Style for the images on Gallery */

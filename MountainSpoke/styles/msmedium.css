@@ -173,3 +173,10 @@ section p.town-article { margin-right: 5% }
     margin-right: 55px;
     font-family: Open Sans;
 }
+
+#contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
