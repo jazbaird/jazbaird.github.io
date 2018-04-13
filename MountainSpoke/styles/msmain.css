@@ -179,7 +179,7 @@ main figure img { width: 100%; }
 }
 
 fieldset {
-    background-color: ;
+    background-color: lightgoldenrodyellow;
     border-radius: 1em;
     margin: 1.5em 0;
     border: #021085 solid 1px;
@@ -190,7 +190,7 @@ legend {
     margin-left: 1%;
     padding: .5em;
     border: black solid 1px;
-    background-color: lightsalmon;
+    background-color: goldenrod;
     border-radius: .4em;
 }
 
